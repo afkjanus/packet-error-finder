@@ -121,7 +121,8 @@ func CalculateReorderRate(numberOfReorderedPackets int64, packetTuples []*Packet
 	}
 
 	// calculate probability for reorder
-	return float64(numberOfReorderedPackets) / float64(packetsWithoutLostOrReorder)
+	// use the counter probability to match netem
+	return 1 - (float64(numberOfReorderedPackets) / float64(packetsWithoutLostOrReorder))
 }
 
 // CalculateMarkovRates is a public function to calculate the probabilities for the simulation of loss
