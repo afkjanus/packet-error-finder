@@ -8,9 +8,10 @@ This software can find the following errors:
 - Duplication
 - Reordering
 - Jitter
+
 The results are presented in a way which can be used directly for error recreation in netem.
 Therefore, Packet Error Finder can be used to analyze real world network environments and recreate the detected errors to harden network protocols against them.
-To analyze and recreate packets this work is best paired with SEDER, from the work *Cost-Effective Network Packet Manipulation and Error-Detection Device*, presented at the 21st Consumer Communications & Networking Conference (CCNC).
+To analyze and recreate packets this work is best paired with SEDER, from the work [*Cost-Effective Network Packet Manipulation and Error-Detection Device* (https://doi.org/10.1109/CCNC51664.2024.10454761)](https://doi.org/10.1109/CCNC51664.2024.10454761), presented at the 21st Consumer Communications & Networking Conference (CCNC).
 
 ## Usage
 - Clone the repository
